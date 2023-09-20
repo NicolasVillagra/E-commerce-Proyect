@@ -1,5 +1,5 @@
 import { DataTypes, UUIDV4 } from "sequelize";
-import sequelize from "./../db.js";
+import sequelize from "../db";
 
 const Usuarios = sequelize.define(
   "Usuarios",
