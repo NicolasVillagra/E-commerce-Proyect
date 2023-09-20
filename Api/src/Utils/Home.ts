@@ -35,7 +35,7 @@ interface DataRopa {
   usuarios: Usuario[]
 }
 
-const data:DataRopa = {
+const data: DataRopa = {
   productos: [
     {
       id: 1,
