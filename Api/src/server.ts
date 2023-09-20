@@ -1,15 +1,14 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 
 const app = express();
 const port = 3001; 
-const sequelize = require("./db");
+import router from './Router/mainRouter';
+//const sequelize = require("./db");
 
-// Ruta de ejemplo
-app.get('/', (req: Request, res: Response) => {
-  res.send('¡Hola, mundo!');
-});
+// RUTAS
+app.use('/', router); 
 
-// Iniciar el servidor
+// INICIAR EL SERVIDOR
 //sequelize
   //.sync({ alter: true })
   //.then(() => {
